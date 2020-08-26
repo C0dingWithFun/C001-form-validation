@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <!-- Header Starts Here -->
+  <header>
+    <h1>Survey Form</h1>
+    <p class="lead">Dummy form created as a part of
+      <a href="https://www.freecodecamp.org" target="_blank">FreeCodeCamp</a>
+      Course.
+    </p>
+  </header>
+  <!-- Header Ends Here -->
+
+  <main>
+    <div class="col left">
+      <!-- Form Starts Here -->
+      <form>
+        <div class="form-group">
+          <label for="firstName">First Name *:</label>
+          <input type="text" name="firstName" id="firstName" placeholder="Enter here..." required>
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name *:</label>
+          <input type="text" name="lastName" id="lastName" placeholder="Enter here..." required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email *:</label>
+          <input type="email" name="email" id="email" placeholder="Enter here..." required>
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender *:</label>
+          <div id="radio-group">
+            <label for="maleGender">
+              <input type="radio" name="gender" id="maleGender" value="male" /> Male
+            </label>
+            <label for="femaleGender">
+              <input type="radio" name="gender" id="femaleGender" value="female" /> Female
+            </label>
+            <label for="otherGender">
+              <input type="radio" name="gender" id="otherGender" value="other" /> Other
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="profession">Profession *:</label>
+          <select name="profession" id="profession">
+            <option disabled selected value="disabled">Choose one option</option>
+            <option value="student">Student</option>
+            <option value="developer">Developer</option>
+            <option value="youtuber">YouTuber</option>
+            <option value="selfEmployed">Self Employed</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="comment">Comments or Suggestions:</label>
+          <textarea name="comment" id="comment" placeholder="Enter here..."></textarea>
+        </div>
+        <input type="submit" value="Submit" class="submit-button">
+      </form>
+      <!-- Form Ends Here -->
+    </div>
+    <div class="col right">
+      <p>
+        T<br>h<br>a<br>n<br>k<br> <br>Y<br>o<br>u<br>❤️
+      </p>
+    </div>
+  </main>
+
+  <!-- Footer Starts Here -->
+  <footer>
+    <p>
+      Checkout this project on
+      <a href="" target="_blank">GitHub</a>
+    </p>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
